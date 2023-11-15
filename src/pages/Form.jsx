@@ -13,46 +13,46 @@ export default function Form({ setIsFormSubmitted }) {
 
     return (
         <>
-            <Text mb={2} fontSize="2xl">Cadastre dados de uma safra para liberar o dashboard informativo</Text>
+            <Text mb={2} fontSize="2xl" color={"white"}>Cadastre dados de uma safra para liberar o dashboard informativo</Text>
 
             <Center flexDir="column">
-                <Text>Informe o município de plantio</Text>
+                <Text color={"white"}>Informe o município de plantio</Text>
                 <Input mb={3} placeholder={"Municipio"}
                 onChange={(e) => setFormData({...formData, municipio: e.target.value})} />
             </Center>
 
             <Center flexDir="column">
-                <Text>Informe a cultura utilizada</Text>
+                <Text color={"white"}>Informe a cultura utilizada</Text>
                 <Input mb={3} placeholder={"Cultura"}
                 onChange={(e) => setFormData({...formData, produto_id: e.target.value})} />
             </Center>
 
             <Center flexDir="column">
-                <Text>Informe o ano de colheita</Text>
+                <Text color={"white"}>Informe o ano de colheita</Text>
                 <Input mb={3} placeholder={"Data"}
                 onChange={(e) => setFormData({...formData, ano: e.target.value})} />
             </Center>
 
             <Center flexDir="column">
-                <Text>Informe qual foi o custo para a produção</Text>
+                <Text color={"white"}>Informe qual foi o custo para a produção</Text>
                 <Input mb={3} placeholder={"Custo de produção"}
                 onChange={(e) => setFormData({...formData, custo_do_produto: e.target.value})} />
             </Center>
 
             <Center flexDir="column">
-                <Text>Informe a média de rendimento por hectare</Text>
+                <Text color={"white"}>Informe a média de rendimento por hectare</Text>
                 <Input mb={3} placeholder={"Rendimento por hectare"}
                 onChange={(e) => setFormData({...formData, rendimento: e.target.value})} />
             </Center>
 
             <Center flexDir="column">
-                <Text>Informe a área total colhida</Text>
+                <Text color={"white"}>Informe a área total colhida</Text>
                 <Input mb={3} placeholder={"Área colhida"}
                 onChange={(e) => setFormData({...formData, area_colhida: e.target.value})} />
             </Center>
 
             <Center flexDir="column">
-                <Text>Informe se foi utilizado financiamento</Text>
+                <Text color={"white"}>Informe se foi utilizado financiamento</Text>
                 <Input mb={3} placeholder={"Financiamento"}
                 onChange={(e) => setFormData({...formData, financiado: e.target.value})} />
             </Center>

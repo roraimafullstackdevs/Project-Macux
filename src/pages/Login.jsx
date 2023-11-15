@@ -6,11 +6,11 @@ export default function Login({ setIsUserLogged }) {
     return (
         <>
             <Image src={logo} mb={8} alt='Data Agro RR Logo' />
-            <Heading mb={8} mx="auto" as="h1">Data Agro RR</Heading>
+            <Heading mb={8} mx="auto" as="h1" color={"white"}>Data Agro RR</Heading>
 
-            <Text>Usuário</Text>
+            <Text color={"white"}>Usuário</Text>
             <Input my={2} placeholder="Nome de usuário" />
-            <Text>Senha</Text>
+            <Text color={"white"}>Senha</Text>
             <Input my={2} placeholder="Senha" />
 
             <Button mt={8} onClick={() => setIsUserLogged(true)}>Entrar</Button>
