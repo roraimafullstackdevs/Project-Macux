@@ -60,7 +60,7 @@ export default function Form({ setIsFormSubmitted }) {
             <Button mt={4} onClick={() => {
                 setIsFormSubmitted(true)
                 formatData(formData)
-                }}>Enviar dados</Button>
+                }}>Cadastrar dados</Button>
         </>
     )
 }

@@ -9,7 +9,7 @@ export default function Main() {
     const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 
     return (
-        <Center h="100vh" bgGradient='linear(to-b, #009407, #181818)'>
+        <Center h="100vh" bgGradient='linear(to-b, #dce294, #009407)'>
             <Flex flexDir="column" margin="auto" justifyContent="center" bg='#3f3f3f' p={8} borderRadius={12}>
                 {isUserLogged ? (
                         isFormSubmitted ? (
