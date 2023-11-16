@@ -6,19 +6,19 @@ export const AuthContext = createContext({});
 
 function AuthProvider({ children }) {
   const [data, setData] = useState({});
-  const localstorageCustomer = "@expoferr2023macux:customers";
+  const localstorageCustomer = "@expoferr2023macux:customer";
   const localstorageToken = "@expoferr2023macux:token";
 
   async function signIn({ email, password }) {
     try {
       const response = await createSessions({ email, password });
-      const { customers, token } = response.data;
+      
+      const { customer, token } = response.data;
 
-      localStorage.setItem(localstorageCustomer, JSON.stringify(customers));
+      localStorage.setItem(localstorageCustomer, JSON.stringify(customer));
       localStorage.setItem(localstorageToken, token);
       setAuthToken(token);
-
-      setData({ customers, token });
+      setData({ customer, token });
     } catch (error) {
       if (error.response) {
         alert(error.response.data.message);
@@ -37,17 +37,17 @@ function AuthProvider({ children }) {
 
   useEffect(() => {
     const token = localStorage.getItem(localstorageToken);
-    const customers = localStorage.getItem(localstorageCustomer);
+    const customer = localStorage.getItem(localstorageCustomer);
 
-    if (token && customers) {
+    if (token && customer) {
       setAuthToken(token);
 
-      setData({ token, customers: JSON.parse(customers) });
+      setData({ token, customer: JSON.parse(customer) });
     }
   }, []);
 
   return (
-    <AuthContext.Provider value={{ signIn, signOut, customers: data.customers }}>
+    <AuthContext.Provider value={{ signIn, signOut, customer: data.customer }}>
       {children}
     </AuthContext.Provider>
   );
