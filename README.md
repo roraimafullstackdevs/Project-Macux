@@ -13,8 +13,13 @@ A equipe MacuX propõe a ideia de um dashboard de tratamento de dados alimentado
 
 `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Rodar o projeto em modo desenvolvedor
+Abrir [http://localhost:3000](http://localhost:3000) para ver no navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Prints do front
+
+Home
+![preview](.github/home.png)
+
+Formulário
+![preview](.github/form.png)
