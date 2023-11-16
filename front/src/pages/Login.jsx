@@ -8,8 +8,8 @@ export default function Login({ setIsUserLogged }) {
             <Image src={logo} mb={8} alt='Data Agro RR Logo' />
             <Heading mb={8} mx="auto" as="h1" color={"white"}>Data Agro RR</Heading>
 
-            <Text color={"white"}>Usuário</Text>
-            <Input my={2} placeholder="Nome de usuário" />
+            <Text color={"white"}>Email</Text>
+            <Input my={2} placeholder="Email" />
             <Text color={"white"}>Senha</Text>
             <Input my={2} placeholder="Senha" />
 
